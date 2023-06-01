@@ -1,0 +1,478 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Courier New, monospace
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro {
+  font-size: 36px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.intoJob{
+  width: 500px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500px;
+}
+
+@keyframes pump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.introArrow{
+position: absolute;
+bottom: 0;
+margin-bottom: 50px;
+font-size: 35px;
+cursor: pointer;
+animation: pump 1s infinite;
+background-color: black;
+color: white;
+text-decoration: none;
+padding: 5px;
+
+}
+
+.introArrow:hover{
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.aboutCard{
+  width: 600px;
+}
+
+.aboutTitle{
+  text-transform: uppercase;
+}
+
+.aboutImg{
+  background-color: 	#404040;
+  border-radius: 10px;
+}
+
+.aboutArrow{
+  margin-top: 100px;
+  font-size: 35px;
+  cursor: pointer;
+  animation: pump 1s infinite;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  }
+  
+  .aboutArrow:hover{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+  }
+
+
+  .skillsArrow{
+    margin-top: 100px;
+    font-size: 35px;
+    cursor: pointer;
+    animation: pump 1s infinite;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    }
+    
+    .skillsArrow:hover{
+      background-color: white;
+      color: black;
+      border-radius: 50px;
+    }
+
+    .skillsArrowContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+ .skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+ }
+
+
+
+.skillList {
+  /* Styles for the list of skills */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  width: 550px;
+}
+
+.skillItem {
+  /* Styles for each individual skill item */
+  background-color: #f3f3f3;
+  color: #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for a cool shape */
+.skillItem::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #f3f3f3;
+  left: -15px;
+}
+
+.skillItem::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+  right: -15px;
+}
+
+.skillItem:first-child {
+  margin-left: 0;
+}
+
+.skillItem:last-child {
+  margin-right: 0;
+}
+
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+
+.projects {
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  background-color: white;
+  padding: 15px;
+}
+
+.projectsTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.projectsSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projectItem {
+  width: 375px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.projectItem:hover {
+  width: 375px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  cursor: pointer;
+}
+
+.projectName {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.projectDesc{
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.projectLink {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.projectsControls {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.projectsControlBtn {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.projectsControlBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.links {
+  background-color: white;
+  width: 40px;
+  border-radius: 50px;
+  position: fixed;
+  left: 0;
+  margin-left: 5px;
+}
+
+.link {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.link:hover {
+  font-size: 22px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  padding: 1px;
+}
+
+
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.hand {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+
+
+.stupid{
+  color: black;
+}
+
+.formContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.formContent {
+  text-align: center;
+}
+
+.formContent img {
+  width: 400px;
+  height: 300px;
+}
+
+.formContent h1 {
+  margin-top: 10px;
+}
+
+.formContent p {
+  margin-top: 10px;
+}
+
+
+.contact {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.contact h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactForm label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm textarea {
+  height: 150px;
+}
+
+.contactForm button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact p {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact p:first-child {
+  margin-top: 0;
+}
+
+
