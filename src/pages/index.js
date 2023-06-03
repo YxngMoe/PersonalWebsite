@@ -154,7 +154,7 @@ export default function Home() {
       <div className={styles.skills}  id="skills">
         <div className={styles.left}>
   <div className={styles.technicalSkills}>
-    <h2 className={styles.skillsHeading}>Technical Skills</h2>
+    <h2 className={styles.skillsHeading}>TECHNICAL SKILLS</h2>
     <h3 className={styles.skillsSubheading}><FaReact/> Frontend Skills</h3>
     <ul className={styles.skillList}>
     <li className={styles.skillItem}>HTML</li>
@@ -184,7 +184,7 @@ export default function Home() {
         </div>
         <div className={styles.right}>
   <div className={styles.behavioralSkills}>
-    <h2 className={styles.skillsHeading}><FaLaptop/> Where Ive Worked</h2>
+    <h2 className={styles.skillsHeading}><FaLaptop/> WHERE IVE WORKED</h2>
     <ul className={styles.workList}>
     <li className={styles.work}>J.P Morgan - Software Engineer Intern</li>
       <li className={styles.work}>Apple - Technical Specialist</li>
@@ -198,10 +198,9 @@ export default function Home() {
   <a href="#projects" className={styles.skillsArrow} onClick={scrollToNextDiv}>▽</a>
   </div>
 
-
-
-  <div className={styles.projects} id="projects">
-      <h1 className={styles.projectsTitle}>My Projects</h1>
+<div id="projects">
+  <h1 className={styles.projectsTitle} >MY PROJECTS</h1>
+  <div className={styles.projects}>
       <div className={styles.projectsSlider}>
         <div className={styles.projectsList}>
           {projectData.map((project) => (
@@ -229,7 +228,7 @@ export default function Home() {
         </div>
       )}
     </div>
-
+    </div>
 
     <div className={styles.contact} id="contact">
         <h1>Contact Me</h1>

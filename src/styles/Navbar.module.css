@@ -19,11 +19,16 @@
 
 .name {
   display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .logo{
   display: flex;
   margin-top: -12px;
+  cursor: pointer;
+
 }
 
 .items {

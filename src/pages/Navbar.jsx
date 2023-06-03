@@ -1,4 +1,5 @@
 import styles from '@/styles/Navbar.module.css';
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -13,10 +14,12 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.flexContainer}>
+      <a href="/">
         <div className={styles.name}>
-          <img className={styles.logo} src="mDesign.jpeg" alt="Logo" width={80} height={40} />
+          <img className={styles.logo} src="mDesign.jpeg" alt="Logo" width={80} height={40}/>
           Mohamed Babiker
         </div>
+        </a>
         <div className={styles.items}>
         <a href="#home" className={styles.item} onClick={scrollToNextDiv}>Home</a>
   <a href="#about" className={styles.item} onClick={scrollToNextDiv}>About</a>
