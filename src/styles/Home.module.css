@@ -476,3 +476,57 @@ padding: 5px;
 }
 
 
+
+
+
+
+.workList{
+  /* Styles for the list of skills */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  width: 550px;
+}
+
+
+
+.work {
+  /* Styles for each individual skill item */
+  background-color: #f3f3f3;
+  color: #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for a cool shape */
+.work::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #f3f3f3;
+  left: -15px;
+}
+
+.work::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+  right: -15px;
+}

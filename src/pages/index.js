@@ -90,7 +90,7 @@ export default function Home() {
         // Add any success handling logic here
         window.location.reload();
       } else {
-        console.log('Failed to submit form');
+        console.log('Failed to subsmit form');
         // Add any error handling logic here
       }
     } catch (error) {
@@ -185,11 +185,11 @@ export default function Home() {
         <div className={styles.right}>
   <div className={styles.behavioralSkills}>
     <h2 className={styles.skillsHeading}><FaLaptop/> Where Ive Worked</h2>
-    <ul className={styles.skillList}>
-    <li className={styles.skillItem}>J.P Morgan - Software Engineer</li>
-      <li className={styles.skillItem}>Apple - Technical Specialist</li>
-      <li className={styles.skillItem}>SNHU - Technical Desk</li>
-      <li className={styles.skillItem}>SC - HTML Instructor</li>
+    <ul className={styles.workList}>
+    <li className={styles.work}>J.P Morgan - Software Engineer Intern</li>
+      <li className={styles.work}>Apple - Technical Specialist</li>
+      <li className={styles.work}>SNHU - Technical Desk</li>
+      <li className={styles.work}>SC - HTML Instructor</li>
     </ul>
   </div>
   </div>
