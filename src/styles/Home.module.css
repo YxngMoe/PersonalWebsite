@@ -216,6 +216,9 @@ padding: 5px;
 
 .projects {
   overflow-x: auto;
+  margin-left: 60px;
+  margin-right: 20px;
+
 }
 
 .projectsTitle {
@@ -521,3 +524,28 @@ padding: 5px;
   border-right: 15px solid white;
   right: -15px;
 }
+
+
+.projectsArrow{
+  margin-top: 100px;
+  font-size: 35px;
+  cursor: pointer;
+  animation: pump 1s infinite;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+
+  }
+  
+  .projectsArrow:hover{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+  }
+
+  .projectsArrowC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

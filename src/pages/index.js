@@ -228,7 +228,11 @@ export default function Home() {
         </div>
       )}
     </div>
+    <div className={styles.projectsArrowC}>
+    <a href="#contact" className={styles.projectsArrow} onClick={scrollToNextDiv}>▽</a>
     </div>
+    </div>
+    
 
     <div className={styles.contact} id="contact">
         <h1>Contact Me</h1>
