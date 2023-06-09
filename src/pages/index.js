@@ -24,6 +24,49 @@ export default function Home() {
     setSelectedProject(null);
   };
 
+  const workExperience = [
+{
+id: 1,
+company: 'JP Morgan & Chase (current)',
+position: 'Software Engineer Intern',
+startDate: 'June 2023',
+endDate: 'August 2023',
+description: 'Currently working as a software engineer intern, contributing to the development of various projects. Collaborating with the team to implement new features, write code, and perform testing. Gaining valuable industry experience and expanding knowledge in software engineering practices.'
+},
+{
+id: 2,
+company: 'Manchester NH Chicken Spot',
+position: 'Fullstack Web Developer',
+startDate: 'January 2023',
+endDate: 'June 2023',
+description: 'As a full stack developer, I collaborated with another developer to design and develop a dynamic website using Next.js, Stripe, Mongoose, and AWS. Our focus was on optimizing the user experience and ensuring secure online transactions. I implemented versatile APIs for seamless communication, developed a robust authentication system, and leveraged cutting-edge technology to establish an online store for USAChicken, resulting in a remarkable 25% increase in sales.'
+},
+{
+id: 3,
+company: 'Apple',
+position: 'Software Engineer',
+startDate: 'October 2022',
+endDate: 'May 2023',
+description: 'Worked as a Technical Specialist at Apple, contributing to the learning and Selling the cutting-edge software products.'
+},
+{
+id: 4,
+company: 'Southern New Hampshire University',
+position: 'Technical Desk',
+startDate: 'September 2020',
+endDate: 'May 2023',
+description: 'Worked at Southern New Hampshire University as a technical desk employee, providing technical support to students, faculty, and staff. Assisted with troubleshooting hardware and software issues, maintaining computer systems, and ensuring a smooth user experience. Developed strong problem-solving and communication skills while working in a fast-paced environment.'
+},
+{
+id: 5,
+company: 'Sudanese Youth Community',
+position: 'Web Development Tutor',
+startDate: 'October 2021',
+endDate: 'December 2021',
+description: 'Volunteered as a web development tutor for the Sudanese Youth Community, teaching and assisting students in building websites. Guided students through the process of designing and developing websites using various technologies. Provided mentorship and support to help students achieve their goals in web development.'
+}
+];
+
   const projectData = [
     {
       id: 1,
@@ -184,12 +227,18 @@ export default function Home() {
         </div>
         <div className={styles.right}>
   <div className={styles.behavioralSkills}>
-    <h2 className={styles.skillsHeading}><FaLaptop/> WHERE IVE WORKED</h2>
+    <h2 className={styles.skillsHeading}><FaLaptop/> Relevant Coursework</h2>
     <ul className={styles.workList}>
-    <li className={styles.work}>J.P Morgan - Software Engineer Intern</li>
+      <li className={styles.work}>Software Engineering 1,2</li>
+      <li className={styles.work}>Programming Languages</li>
+      <li className={styles.work}>Operating Systems</li>
+      <li className={styles.work}>Computer Architecture</li>
+      <li className={styles.work}>Data Structures & Algorithms</li>
+      <li className={styles.work}>Database Systems</li>
+    {/* <li className={styles.work}>J.P Morgan - Software Engineer Intern</li>
       <li className={styles.work}>Apple - Technical Specialist</li>
       <li className={styles.work}>SNHU - Technical Desk</li>
-      <li className={styles.work}>SC - HTML Instructor</li>
+      <li className={styles.work}>SC - HTML Instructor</li> */}
     </ul>
   </div>
   </div>
@@ -197,6 +246,10 @@ export default function Home() {
   <div className={styles.skillsArrowContainer}>
   <a href="#projects" className={styles.skillsArrow} onClick={scrollToNextDiv}>▽</a>
   </div>
+
+
+
+
 
 <div id="projects">
   <h1 className={styles.projectsTitle} >MY PROJECTS</h1>
@@ -229,9 +282,39 @@ export default function Home() {
       )}
     </div>
     <div className={styles.projectsArrowC}>
-    <a href="#contact" className={styles.projectsArrow} onClick={scrollToNextDiv}>▽</a>
+    <a href="#works" className={styles.projectsArrow} onClick={scrollToNextDiv}>▽</a>
     </div>
     </div>
+
+
+
+<div id="works" className={styles.workContainer}>
+  <h1 className={styles.workTitle}>Work Experience<span className={styles.workScroll}> Scroll v</span></h1>
+  <div className={styles.works}>
+    <div className={styles.workSlider}>
+      <div className={styles.worksList}>
+        {workExperience.map((experience) => (
+          <div className={styles.workItem} key={experience.id}>
+            {/* <Image src={experience.image} alt={experience.company} width={400} height={300} /> */}
+            <h3 className={styles.workCompany}>{experience.company}</h3>
+            <h3 className={styles.workPosition}>{experience.position}</h3>
+            <p className={styles.workDate}>
+              {experience.startDate} - {experience.endDate}
+            </p>
+            <p className={styles.workDesc}>{experience.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  <div className={styles.workArrowC}>
+    <a href="#contact" className={styles.workArrow} onClick={scrollToNextDiv}>
+      ▽
+    </a>
+  </div>
+</div>
+
+
     
 
     <div className={styles.contact} id="contact">
@@ -249,9 +332,31 @@ export default function Home() {
           <p>Connect with me to collaborate on projects and I'm open to job opportunities!</p>
           <p>Email: cs.mohamedbabiker@gmail.com</p>
 
-          <button type="submit">Send Message</button>
+          <button className={styles.button} >Send Message</button>
         </form>
+
+        <div className={styles.skillsArrowContainer}>
+  <a href="#resume" className={styles.skillsArrow} onClick={scrollToNextDiv}>▽</a>
+  </div>
       </div>
+
+      <div className={styles.resumeContainer} id='resume'>
+        <h1 className={styles.resumeTitle}>Grab My Resume</h1>      
+        <img
+      src="r.png"
+      alt="Resume"
+      className={styles.resumeImage}
+      width={400}
+      height={550}
+    />
+    <a
+      href="r.png"
+      download="r.png"
+      className={styles.resumeButton}
+    >
+      Download Resume
+    </a>
+    </div>
     </div>
   )
 }
