@@ -208,6 +208,7 @@ padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-y: auto;
   align-items: center;
   height: 100vh;
   background-color: black;
@@ -325,7 +326,7 @@ padding: 5px;
   border-radius: 50px;
   position: fixed;
   left: 0;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .link {
@@ -420,6 +421,9 @@ padding: 5px;
   padding: 20px;
   background-color: black;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact h1 {
@@ -548,4 +552,177 @@ padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+
+.workArrow{
+  margin-top: 100px;
+  font-size: 35px;
+  cursor: pointer;
+  animation: pump 1s infinite;
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+
+  }
+  
+  .workArrow:hover{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+  }
+
+  .workArrowC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .works {
+    overflow-y: auto;
+    margin-left: 60px;
+    margin-right: 20px;    
+    background-color: whitesmoke;
+  }
+  
+  .workTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+    background-color: whitesmoke;
+  }
+  
+  
+  .worksList {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+  }
+  
+  .workScroll{
+    font-size: 15px;
+  }
+  .workItem {
+    flex: 0 0 375px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  
+  .workItem:hover {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black;
+    cursor: pointer;
+  }
+  
+  .workName {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;  
+  }
+  
+  .workDesc{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .workLink {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .workControls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .workContainer{
+    margin-top: 10px;
+    background-color: whitesmoke;
+
+  }
+
+  .workCompany, .workPosition, .workDate{
+    text-align: center;
+  }
+
+  .button {
+    background-color: red;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-left: 25px;
+  }
+  
+  .button:hover {
+    background-color: darkred;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+.resumeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.resumeTitle{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+
+  .resumeButton {
+    background-color: blue;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 70px;
+  }
+  
+  .resumeButton:hover {
+    background-color: darkblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
